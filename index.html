@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+       .container{
+           width: 1024px;
+           background-color: cornsilk;
+           margin: 0 auto;
+           height: 500px;
+       }
+       .add-product{
+           width: 40%;
+           float: left;
+
+       }
+       .list-product{
+           width: 60%;
+           float: left;
+       }
+       .table{
+           width: 90%;
+           border: 1px solid;
+           border-collapse: collapse;
+       }
+       .table tr{
+           text-align: center;
+               }
+
+       .table td,tr,th{
+           border: 1px solid;
+           border-collapse: collapse;
+        }
+       .table{
+           border-collapse: collapse;
+       }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="add-product">
+        <table class="table-add-product">
+            <tr>
+                <td>Name</td>
+                <td><input id="name" type="text"></td>
+            </tr>
+            <tr>
+                <td>Price</td>
+                <td><input id="price" type="text"></td>
+            </tr>
+            <tr>
+                <td>Author</td>
+                <td><input id="author" type="text"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button  onclick="save()" id="btn-save">Save</button></td>
+<!--                <td>-->
+<!--                    <button onclick="deleteManager(index)">Clear</button></td>-->
+<!--            </tr>-->
+        </table>
+    </div>
+    <div class="list-product">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>STT</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Author</th>
+            </tr>
+            </thead>
+            <tbody id="list-product">
+            <tr>
+                <td>1</td>
+                <td>Samsung Note</td>
+                <td>40000</td>
+                <td>Samsung</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="js/Product.js"></script>
+<script src="js/ProductManager.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
